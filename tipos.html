@@ -1,40 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tipos de Cactos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9fdf7;
+    }
+    .card-img-placeholder {
+      background-color: #dff0d8;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3c763d;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-radius: 0.25rem 0.25rem 0 0;
+      user-select: none;
+    }
+    .card {
+      border: 2px solid #3c763d;
+    }
+    h2, h5 {
+      font-weight: 700;
+    }
+    p.lead {
+      font-size: 1.15rem;
+      color: #2d4a20;
+    }
+    footer {
+      background-color: #3c763d !important;
+    }
+
+    .img-cacto {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.25rem;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container mt-4">
-    <h2 class="text-success">Tipos de Cactos</h2>
-    <ul>
-      <li>Cacto Mandacaru</li>
-      <li>Cacto Bola</li>
-      <li>Cacto Rabo-de-rato</li>
-      <li>Cacto Cereus</li>
-    </ul>
+  <div class="container mt-5 pt-4">
+    <h2 class="text-success text-center mb-4">Tipos de Cactos</h2>
 
-    <!-- Formulário -->
-    <form class="mt-4">
-      <h5 class="text-success">Entre em contato</h5>
-      <div class="mb-3">
-        <label class="form-label">Nome</label>
-        <input type="text" class="form-control" placeholder="Seu nome">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Mensagem</label>
-        <textarea class="form-control" rows="3" placeholder="Sua dúvida..."></textarea>
-      </div>
-      <button type="submit" class="btn btn-success">Enviar</button>
-    </form>
+    <p class="lead text-center mb-5">
+      Os cactos são plantas da família Cactaceae, adaptadas a climas áridos e muito conhecidas por sua resistência,
+      capacidade de armazenar água e aparência exótica. Existem mais de 2.000 espécies, que variam em tamanho, formato e cor.
+      Abaixo estão os principais tipos, classificados de forma simples.
+    </p>
 
-    <!-- Botão Voltar -->
-    <a href="index.html" class="btn btn-outline-success mt-4">Voltar à Página Principal</a>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+      <!-- 1. Cactos Colunares -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/Cactos_Colunares.jpg" class="card-img-top img-cacto" alt="Descrição da imagem" />
+          <div class="card-body">
+            <h5 class="text-success">1. Cactos Colunares</h5>
+            <p>Crescem em formato de coluna ou torre, podendo atingir vários metros de altura.</p>
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+              <li>Cereus peruvianus (cacto azul)</li>
+              <li>Trichocereus pachanoi (cacto São Pedro)</li>
+            </ul>
+            <p><em>Curiosidade:</em> Alguns podem florescer à noite e ter flores grandes e perfumadas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Cactos Globosos -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/Cactos-Globosos.jpg" class="card-img-top img-cacto" alt="Descrição da imagem" />
+          <div class="card-body">
+            <h5 class="text-success">2. Cactos Globosos (em forma de bola)</h5>
+            <p>Têm formato arredondado e costumam ser pequenos. Muitos possuem espinhos simétricos.</p>
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+              <li>Echinocactus grusonii (assento-de-sogra)</li>
+              <li>Gymnocalycium spp.</li>
+            </ul>
+            <p><em>Curiosidade:</em> São populares em vasos e jardins ornamentais.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Cactos Epífitos -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/Cactos-Epífitos.jpg" class="card-img-top img-cacto" alt="Descrição da imagem" />
+          <div class="card-body">
+            <h5 class="text-success">3. Cactos Epífitos</h5>
+            <p>Vivem sobre outras plantas, geralmente em florestas tropicais. Têm caules pendentes ou achatados.</p>
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+              <li>Schlumbergera truncata (flor-de-maio)</li>
+              <li>Rhipsalis spp.</li>
+            </ul>
+            <p><em>Curiosidade:</em> São cactos sem espinhos, que florescem com facilidade em ambientes internos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Cactos Rasteiros ou Aglomerados -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/Cactos-Rasteiros.jpg" class="card-img-top img-cacto" alt="Descrição da imagem" />
+          <div class="card-body">
+            <h5 class="text-success">4. Cactos Rasteiros ou Aglomerados</h5>
+            <p>Formam “tapetes” ou “colônias” no solo com vários ramos juntos.</p>
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+              <li>Mammillaria spp.</li>
+              <li>Opuntia microdasys (cacto-orelha-de-coelho)</li>
+            </ul>
+            <p><em>Curiosidade:</em> Podem ter espinhos muito pequenos chamados gloquídeos, que irritam a pele.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Separar linha para o cacto 5 e centralizar -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="imagens/Cactos-Ornamentais.jpg" class="card-img-top img-cacto" alt="Descrição da imagem" />
+          <div class="card-body">
+            <h5 class="text-success">5. Cactos Ornamentais ou Enxertados</h5>
+            <p>São cactos combinados artificialmente para fins decorativos.</p>
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+              <li>Gymnocalycium mihanovichii enxertado em Hylocereus (cacto colorido de flor laranja, rosa ou amarela)</li>
+            </ul>
+            <p><em>Curiosidade:</em> A parte colorida geralmente não possui clorofila e precisa do enxerto para sobreviver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-outline-success">← Voltar à Página Principal</a>
+    </div>
   </div>
 
-  <!-- Rodapé -->
   <footer class="bg-success text-white text-center p-3 mt-5">
     © 2025 Cactos Web. Todos os direitos reservados.
   </footer>
