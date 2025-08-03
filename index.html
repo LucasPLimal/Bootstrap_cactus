@@ -22,6 +22,7 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
   <!-- Navbar -->
+  <section id="Area-navbar">
   <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#topo">
@@ -46,23 +47,40 @@
       </div>
     </div>
   </nav>
+  </section>
 
   <!-- Âncora para home -->
   <div id="topo" class="pt-5"></div>
 
   <!-- Carrossel -->
+  <section id="carrossel">
   <div class="container mt-5 pt-5">
     <div class="w-50 mx-auto">
       <div id="carrosselCactos" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagens/cactos grandes.jpg" class="d-block w-100" alt="Cacto 1">
+            <img src="imagens/cactos.jpg" class="d-block w-100" alt="Cacto 1">
           </div>
           <div class="carousel-item">
             <img src="imagens/flor.png" class="d-block w-100" alt="Cacto 2">
           </div>
           <div class="carousel-item">
             <img src="imagens/mini-cactos.png" class="d-block w-100" alt="Cacto 3">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Cactos-Epífitos.jpg" class="d-block w-100" alt="Cacto 3">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Cactos-Globosos.jpg" class="d-block w-100" alt="Cacto 3">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Cactos_Colunares.jpg" class="d-block w-100" alt="Cacto 3">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Cactos-Rasteiros.jpg" class="d-block w-100" alt="Cacto 3">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/Cactos-Ornamentais.jpg" class="d-block w-100" alt="Cacto 3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carrosselCactos" data-bs-slide="prev">
@@ -74,21 +92,29 @@
       </div>
     </div>
   </div>
+  </section>
 
   <!-- Parágrafo -->
+  <section id="parágrafo1">
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-10 mx-auto">
         <h2 class="text-success">O que é um Cacto?</h2>
         <p class="lead">
-          Os cactos são plantas da família Cactaceae, com adaptações incríveis para sobreviver em ambientes secos. Eles acumulam água em seus caules e possuem espinhos que protegem contra predadores e perda de água.
+          Os cactos são plantas da família Cactaceae, com adaptações incríveis para sobreviver em ambientes secos. 
+          Eles acumulam água em seus caules e possuem espinhos que protegem contra predadores e perda de água.
         </p>
       </div>
     </div>
   </div>
+  </section>
+
+  <!-- Âncora para Classificação(Cards) -->
+  <div id="Cards" class="pt-5"></div>
 
   <!-- Cards -->
-  <div class="container mt-5" id="Cards">
+  <section id="cards1">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md-4">
         <div class="card h-100">
@@ -119,8 +145,10 @@
       </div>
     </div>
   </div>
+  </section>
 
   <!-- Botão Modal -->
+  <section id="area-modal">
   <div class="container text-center mt-5">
     <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dicasModal">🌵 Dicas de Cuidados</button>
   </div>
@@ -143,8 +171,10 @@
       </div>
     </div>
   </div>
+  </section>
 
   <!-- Formulário -->
+  <section id="formulario1">
   <div class="container mt-5">
     <h3 class="text-success">Entre em Contato</h3>
     <form id="formularioContato">
@@ -163,8 +193,10 @@
       <button type="submit" class="btn btn-success">Enviar</button>
     </form>
   </div>
+  </section>
 
   <!-- Toast de Confirmação -->
+  <section id="area-toast1">
   <div class="toast-container">
     <div id="toastConfirma" class="toast align-items-center text-white bg-dark border-0" role="alert">
       <div class="d-flex">
@@ -173,13 +205,18 @@
       </div>
     </div>
   </div>
+  </section>
 
   <!-- Rodapé -->
+  <section id="rodape1">
   <footer class="bg-success text-white text-center p-3 mt-5">
     © 2025 Cactos Web. Todos os direitos reservados.
   </footer>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script /p botão do forms -->
   <script>
     const form = document.getElementById("formularioContato");
     const toastEl = document.getElementById("toastConfirma");
@@ -191,5 +228,6 @@
       toast.show();
     });
   </script>
+
 </body>
 </html>

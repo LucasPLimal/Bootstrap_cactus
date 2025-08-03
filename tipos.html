@@ -6,6 +6,12 @@
   <title>Tipos de Cactos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
+    .toast-container {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 1055;
+    }
     body {
       background-color: #f9fdf7;
     }
@@ -48,15 +54,23 @@
 </head>
 <body>
 
-  <div class="container mt-5 pt-4">
+  <!-- Paragrafo -->
+  <section id="paragrafo2">
+  <div class="container mt-5">
     <h2 class="text-success text-center mb-4">Tipos de Cactos</h2>
 
     <p class="lead text-center mb-5">
-      Os cactos são plantas da família Cactaceae, adaptadas a climas áridos e muito conhecidas por sua resistência,
-      capacidade de armazenar água e aparência exótica. Existem mais de 2.000 espécies, que variam em tamanho, formato e cor.
-      Abaixo estão os principais tipos, classificados de forma simples.
+      Os cactos formam um grupo vasto e fascinante de plantas suculentas, com espécies que variam bastante em forma, tamanho e características.
+      Desde os pequenos exemplares que cabem na palma da mão até os gigantes que se erguem nos desertos, os cactos conquistam admiradores por 
+      sua beleza exótica, resistência e versatilidade. Nesta seção, você conhecerá alguns dos principais tipos de cactos, suas particularidades, 
+      formas de cultivo e como eles podem ser usados na decoração e no paisagismo. Seja você um iniciante ou um colecionador, há sempre um tipo 
+      de cacto ideal para cada ambiente e estilo de vida.
     </p>
+  </section>
 
+  <!-- Cards -->
+  <section id="cards2">
+  <div class="container mt-5">
     <div class="row row-cols-1 row-cols-md-2 g-4">
 
       <!-- 1. Cactos Colunares -->
@@ -145,16 +159,64 @@
         </div>
       </div>
     </div>
+  </div>
+  </section>
 
+  <!-- Formulário -->
+  <section id="formulario2">
+  <div class="container mt-5">
+    <h3 class="text-success">Quer ver outro tipo de cacto aqui?</h3>
+    <p class="lead text-left mb-3">
+      Faça uma sugestão para aumentarmos nosso catalogo!
+    </p>
+    <form id="formularioSugestao">
+      <div class="mb-3 w-50">
+        <label for="sugestao" class="form-label">Sugestão</label>
+        <input type="text" class="form-control" id="sugestao" placeholder="Adicione seu cacto..." required>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+  </section>
+
+  <!-- Toast de Confirmação -->
+  <section id="area-toast2">
+  <div class="toast-container">
+    <div id="toastConfirma2" class="toast align-items-center text-white bg-dark border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">Mensagem enviada com sucesso!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botão de voltar -->
+  </div>
     <div class="text-center mt-5">
       <a href="index.html" class="btn btn-outline-success">← Voltar à Página Principal</a>
     </div>
   </div>
 
+  <!-- Rodapé -->
+  <section id="rodape2">
   <footer class="bg-success text-white text-center p-3 mt-5">
     © 2025 Cactos Web. Todos os direitos reservados.
   </footer>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Script /p botão do forms -->
+  <script>
+    const form = document.getElementById("formularioSugestao");
+    const toastEl = document.getElementById("toastConfirma2");
+    const toast = new bootstrap.Toast(toastEl);
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      form.reset();
+      toast.show();
+    });
+  </script>
 </body>
 </html>
